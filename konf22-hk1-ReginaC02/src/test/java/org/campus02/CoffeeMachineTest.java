@@ -8,11 +8,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CoffeeMachineTest {
 
+    CoffeeMachine coffeeMachine = new CoffeeMachine(300,250);
 
 
     @Test
     @DisplayName("Test Konstruktor")
     void testConstructor() {
+        assertEquals(300, coffeeMachine.getMaxWaterLevel());
 
 
     }
