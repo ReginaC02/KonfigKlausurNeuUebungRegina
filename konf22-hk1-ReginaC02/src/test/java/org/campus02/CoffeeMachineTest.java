@@ -8,13 +8,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CoffeeMachineTest {
 
-    CoffeeMachine coffeeMachine = new CoffeeMachine(300,250);
+    CoffeeMachine coffeeMachine = new CoffeeMachine(300, 250);
 
 
     @Test
     @DisplayName("Test Konstruktor")
     void testConstructor() {
         assertEquals(300, coffeeMachine.getMaxWaterLevel());
+        assertEquals(250, coffeeMachine.getMaxCoffeeBeansLevel());
+        assertEquals(0, coffeeMachine.getCurrentWaterLevel());
+        assertEquals(0, coffeeMachine.getCurrentCoffeeBeansLevel());
 
 
     }
@@ -25,6 +28,7 @@ class CoffeeMachineTest {
     @Test
     void fill() {
 
+        assertEquals(300);
 
     }
 
@@ -41,7 +45,6 @@ class CoffeeMachineTest {
      */
     @Test
     void checkMinimumLevelBeforeFill() {
-
 
 
     }
