@@ -8,14 +8,13 @@ public class CoffeeMachine {
     private int currentCoffeeBeansLevel;
 
     public CoffeeMachine(int maxWaterLevel, int maxCoffeeBeansLevel) {
-        this.maxWaterLevel = getMaxWaterLevel();
-        this.maxCoffeeBeansLevel = getMaxCoffeeBeansLevel();
+        this.maxWaterLevel = maxWaterLevel;
+        this.maxCoffeeBeansLevel = maxCoffeeBeansLevel;
         this.currentWaterLevel = 0;
         this.currentCoffeeBeansLevel = 0;
     }
 
     public int getMaxWaterLevel() {
-
         return maxWaterLevel;
     }
 
@@ -46,8 +45,7 @@ public class CoffeeMachine {
         this.currentWaterLevel = currentWaterLevel;
     }
 
-    public void setCurrentCoffeeBeansLevel(int currentCoffeeBeansLevel) {
-        this.currentCoffeeBeansLevel = currentCoffeeBeansLevel;
+    public void setCurrentCoffeeBeansLevel(int currentCoffeeBeansLevel) {this.currentCoffeeBeansLevel = currentCoffeeBeansLevel;
     }
 
     public void clean() {
